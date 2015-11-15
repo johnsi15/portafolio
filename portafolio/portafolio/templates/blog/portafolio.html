@@ -1,0 +1,138 @@
+{% extends "base.html" %} 
+
+{% block titulo %}John Serrano | Portafolio{% endblock %}
+
+{% block encabezado %}
+<style>
+	footer{
+		display: none;
+	}
+  header{
+    opacity: 0.85;
+  }
+</style>
+   <!-- <section class="imagen-header">
+      <img src="{{STATIC_URL}}img/cabecera2.jpg" alt="Fondo" title"John Serrano"/> 
+      <div class="circular_header"><img src="" alt="" /></div>
+      <h1>John Serrano Developer</h1>
+      <p>Desarrollador web en constante proceso de aprendizaje, <br>me gusta mejorar y aprender algo nuevo cada día, me apasiona la tecnología web y el desarrollo de esta misma.</p>
+   </section> -->
+{% endblock %}
+
+{% block contenido %}
+	<div id="enboltura">
+        <section class="parallax" id="bloque1">
+            <!-- <img id="logo" src="{{STATIC_URL}}img/logo.png" />-->
+            <div class="capa">
+              <h1>App prestamosaj</h1> 
+              <h2>Esta aplicación se realizó para prestar dinero y llevar control de clientes, fechas de pago, intereses, el codigo esta en <a href="https://github.com/johnsi15/appPrestamos" target="_blank">GitHub</a>.</h2>
+            </div>
+             <div id="slider2" class="prestamos">
+              <img src="{{STATIC_URL}}img/prestamos_1.jpg" alt="">
+              <img src="{{STATIC_URL}}img/prestamos_2.jpg" alt="">
+              <img src="{{STATIC_URL}}img/prestamos_3.jpg" alt="">
+            </div>
+             <p>
+              <a href="https://github.com/johnsi15/appPrestamos" target="_blank"><img src="{{STATIC_URL}}img/github.png" alt=""></a>
+              <br><strong>Herramientas</strong> <br>
+              -Php <br> -Bootstrap <br> -Jquery <br> -Jquery-UI <br> <a href="https://www.youtube.com/watch?v=AcBZ1Cwckuc" target="_blank">-Ver Video</a>
+           </p>
+        </section>
+        <section class="parallax" id="bloque2">
+          <div class="capa">
+            <h1>App lared.com</h1> 
+            <h2>Esta aplicación se creo con el fin de llevar un control sobre las entradas y los cierres de caja, el codigo esta en <a href="https://github.com/johnsi15/lared.com" target="_blank">GitHub</a>.</h2>
+          </div>              
+         
+           <div class="herramientas">
+             <a href="https://github.com/johnsi15/lared.com" target="_blank"><img src="{{STATIC_URL}}img/github.png" alt=""></a> 
+              <br><strong>Herramientas</strong> <br>
+              -Php <br> -Bootstrap <br> -Jquery <br> -Mysql
+              
+          </div>
+          <div id="slider" class="lared">
+            <img src="{{STATIC_URL}}img/lared_1.jpg" alt="">
+            <img src="{{STATIC_URL}}img/lared_2.jpg" alt="">
+            <img src="{{STATIC_URL}}img/lared_3.jpg" alt="">
+            <img src="{{STATIC_URL}}img/lared_4.jpg" alt=""> 
+          </div>
+        </section>
+        <section class="parallax" id="bloque3">
+          <div class="capa"> 
+            <h1>App de Votaciones</h1>
+            <h2>Esta aplicación la diseñe para la empresa plásticos Formosa, solo cuenta votos para elegir un candidato de planta.</h2>
+          </div>
+
+           <div class="herramientas">
+             <a href="https://github.com/johnsi15/lared.com" target="_blank"><img src="{{STATIC_URL}}img/github.png" alt=""></a> 
+              <br><strong>Herramientas</strong> <br>
+              -Php <br> -Bootstrap <br> -Jquery <br> -Mysql
+              
+          </div>
+          <div id="slider" class="votaciones">
+            <img  src="{{STATIC_URL}}img/votaciones_1.jpg" alt="">
+            <img  src="{{STATIC_URL}}img/votaciones_2.jpg" alt="">
+            <img  src="{{STATIC_URL}}img/votaciones_3.jpg" alt="">
+          </div>
+        </section>
+
+        <section class="parallax" id="bloque4">
+          <div class="capa">
+            <h1>App Clinica San diego</h1>
+            <h2>Esta es una pequeña aplicación para agregar citas y médicos, llevar control de las citas diarias, el código esta en <a href="https://github.com/johnsi15/clinica" target="_blank">GitHub</a>.</h2>
+          </div>
+             <div id="slider2" class="clinica">
+              <img src="{{STATIC_URL}}img/clinica_1.jpg" alt="">
+              <img src="{{STATIC_URL}}img/clinica_2.jpg" alt="">
+              <img src="{{STATIC_URL}}img/clinica_3.jpg" alt="">
+              <img src="{{STATIC_URL}}img/clinica_4.jpg" alt="">
+            </div>
+             <p>
+              <a href="https://github.com/johnsi15/clinica" target="_blank"><img src="{{STATIC_URL}}img/github.png" alt=""></a>
+              <br><strong>Herramientas</strong> <br>
+              -Php <br> -Bootstrap <br> -Jquery <br> -Jquery-UI <br> -Jquery-Validate 
+        </section>
+        <section class="parallax" id="bloque5">
+            <div class="capa">
+              <h1>App Ganancias y gastos</h1>
+              <h2>Esta es una aplicación para llevar control de nuestros ingresos y gastos durante la vida, el código esta en <a href="https://github.com/johnsi15/GananciasDiarias" target="_blank">GitHub</a>,<a href="https://gananciasygastos.herokuapp.com" target="_blank">Version de prueba gratis</a>.</h2>
+            </div>
+
+             <div class="herramientas">
+             <a href="https://github.com/johnsi15/GananciasDiarias" target="_blank"><img src="{{STATIC_URL}}img/github.png" alt=""></a> 
+              <br><strong>Herramientas</strong> <br>
+              -Python <br> -Django <br> -Bootstrap 3 <br> -Jquery, Ajax <br> <a href="https://youtu.be/_xI-Zk0BQ_o" target="_blank">-ver Video</a>
+              
+            </div>
+            <div id="slider" class="ganancias">
+              <img  src="{{STATIC_URL}}img/ganancias_1.jpg" alt="">
+              <img  src="{{STATIC_URL}}img/ganancias_2.jpg" alt="">
+              <img  src="{{STATIC_URL}}img/ganancias_3.jpg" alt="">
+              <img  src="{{STATIC_URL}}img/ganancias_4.jpg" alt="">
+            </div>
+        </section>
+    </div>
+{% endblock %}
+
+{% block pie %}
+  <div class="pie_portafolio">
+    <div class="redes">
+      <h3>© Jandrey - 2015</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/Jandrey15" target="_blank" class="icon-facebook2"> </a></li>
+        <li><a href="https://twitter.com/Jandrey15" target="_blank" class="icon-twitter"> </a></li>
+        <li><a href="https://github.com/johnsi15" target="_blank" class="icon-github4"> </a></li>
+      </ul>
+    </div>
+    <div id="divisor_footer"></div>
+    <div class="menu_pie">
+          <ul>
+              <li><a href="/">Sobre Mi</a></li>
+              <li><a href="/portafolio/">Portafolio</a></li>
+              <li><a href="/cv/">CV</a></li>
+              <li><a href="/certificados/">Certificados</a></li>
+          </ul>
+      </div>
+  </div>
+ 
+{% endblock %}

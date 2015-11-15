@@ -1,0 +1,32 @@
+{% extends "base.html" %} 
+
+{% block titulo %}John Serrano | Certificados{% endblock %}
+
+{% block encabezado %}
+<!-- <section class="imagen-header">
+	 <img src="{{STATIC_URL}}img/cabecera.jpg" alt="Fondo" title"John Serrano"/> 
+</section> -->
+<script type="text/javascript">
+	
+		var cer = 0;
+		var control5 = setInterval(cambiarSlider6, 5000);
+
+		function cambiarSlider6(){
+			cer++;
+			if(cer == $(".certificados img").size()){
+				cer = 0;
+			}
+			$(".certificados img").hide();
+			$(".certificados img").eq(cer).fadeIn("medium");
+		}
+</script>
+{% endblock %}
+
+{% block contenido %}
+	 <div id="sliderCertificados" class="certificados">
+            <img src="{{STATIC_URL}}img/diplomaNode.png" alt="">
+            <img src="{{STATIC_URL}}img/diploma_PB.png" alt="">
+            <img src="{{STATIC_URL}}img/diplomaPython.png" alt="">
+            <img src="{{STATIC_URL}}img/diplomaTrabajador.png" alt="">
+    </div>
+{% endblock %}

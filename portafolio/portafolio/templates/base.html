@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<title>{% block titulo %}{% endblock %}</title>
+
+	<link rel="icon" type="image/png" href="{{STATIC_URL}}img/favico.png" />
+	<link rel="stylesheet" type="text/css" href="{% static "css/estilos.min.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/fonts.css" %}">
+</head>
+<body>
+	<header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span><h1><a href="">John Serrano | Desarrollador Web</a></h1></a>
+			<div class="menu_circular"><img src="" alt="" /></div>
+		</div>
+		<section class="wrapper">
+	        <nav>
+	            <ul>
+	            	<li id="nohover"><div class="circular"><img src="" alt="" /></div></li>
+	            	<li id="nombre"><a href="/">John Serrano | Desarrollador Web</a></li>
+	                <li><a href="/">Sobre Mi</a></li>
+	                <li id="divisor"></li>
+	                <li><a href="/portafolio/">Portafolio</a></li>
+	                <li id="divisor"></li>
+	                <li><a href="/cv/">CV</a></li>
+	                <li id="divisor"></li>
+	                <li><a href="/certificados/">Certificados</a></li>
+	            </ul>
+	    	</nav>
+	    </section>
+	</header>
+	{% block encabezado %}{% endblock %}
+	
+	{% block contenido %}{% endblock %}
+	<footer>
+		<div class="redes">
+			<h3>© Jandrey - 2015</h3>
+			<ul>
+				<li><a href="https://www.facebook.com/Jandrey15" target="_blank" class="icon-facebook2"> </a></li>
+				<li><a href="https://twitter.com/Jandrey15" target="_blank" class="icon-twitter"> </a></li>
+				<li><a href="https://github.com/johnsi15" target="_blank" class="icon-github4"> </a></li>
+			</ul>
+		</div>
+		<div id="divisor_footer"></div>
+		<div class="menu_pie">
+	        <ul>
+	            <li><a href="/">Sobre Mi</a></li>
+	            <li><a href="/portafolio/">Portafolio</a></li>
+	            <li><a href="/cv/">CV</a></li>
+	            <li><a href="/certificados/">Certificados</a></li>
+	        </ul>
+	    </div>		 
+	</footer>
+	{% block pie %}
+		
+	{% endblock %}
+	<!-- scripts -->
+	<script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "js/js.js" %}"></script>
+</body>
+</html>
