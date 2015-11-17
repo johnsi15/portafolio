@@ -68,5 +68,17 @@ $(document).ready(function(){
 		$(".clinica img").eq(c).fadeIn("medium");
 	}
 
+	var g = 0;
+	var control5 = setInterval(cambiarSlider5, 3000);
+
+	function cambiarSlider5(){
+		g++;
+		if(g == $(".ganancias img").size()){
+			g = 0;
+		}
+		$(".ganancias img").hide();
+		$(".ganancias img").eq(g).fadeIn("medium");
+	}
+
 });/*fin document*/
 		
