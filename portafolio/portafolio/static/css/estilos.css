@@ -152,7 +152,7 @@ nav ul #nombre{
 
 .circular_header{
   -moz-border-radius: 150px; 
-  background: url("../img/foto2.png") no-repeat;  
+  background: url("../img/foto2.png") no-repeat;
   border-radius: 150px; 
   border:none;
   height: 150px; 

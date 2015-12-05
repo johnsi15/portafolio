@@ -51,10 +51,9 @@
               
           </div>
           <div id="slider" class="lared">
-            <img src="{{STATIC_URL}}img/lared_1.jpg" alt="">
-            <img src="{{STATIC_URL}}img/lared_2.jpg" alt="">
-            <img src="{{STATIC_URL}}img/lared_3.jpg" alt="">
-            <img src="{{STATIC_URL}}img/lared_4.jpg" alt=""> 
+            {% for img in imgRed %}
+              <img src="{{MEDIA_URL}}{{img.imagen}}" alt="{{img.nombre}}">
+            {% endfor %}
           </div>
         </section>
         <section class="parallax" id="bloque3">

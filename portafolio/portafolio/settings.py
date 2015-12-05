@@ -16,7 +16,6 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -81,6 +80,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+#se le puede dar valor o lo podemos omitir por defecto
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
